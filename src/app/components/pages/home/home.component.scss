@@ -22,7 +22,7 @@ p {
   width: 100%;
   max-width: 800px;
   position: relative;
-  color: $principal;
+  color: $claro;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,66 +72,5 @@ p {
 }
 
 .profile-image img {
-  width: 50%;
-}
-
-// diseño{
-//     position: relative;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     overflow: hidden;
-//   }
-
-.section-container {
-  display: flex;
-  flex-direction: row;
-  height: 500px;
-  justify-content: center;
-}
-
-.section {
-  width: 100%;
-  max-width: 800px;
-  position: relative;
-  color: $principal;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-
-}
-
-.section div {
-  margin: 120px;
-  text-align: left;
-  font-size: 40px;
-}
-
-.section-description {
-  font-size: 14px;
-}
-
-.section-image {
-  display: flex;
-  width: 45%;
-  justify-content: inherit;
-  align-items: center;
-  padding: 0px 0px 0px 100px;
-}
-
-.section-image img {
-  width: 100%;
-}
-
-.section-image {
-  display: flex;
-  width: 45%;
-  justify-content: flex-start;
-  align-items: right;
-  padding: 0px 0px 0px 20px;
-}
-
-.section-image img {
   width: 50%;
 }
