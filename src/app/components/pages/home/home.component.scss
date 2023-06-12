@@ -1,0 +1,137 @@
+@import '_colors';
+
+body {
+  height: 100vh; /* Establece la altura del body al 100% del viewport */
+  margin: 0;
+  padding: 0;
+}
+
+p {
+
+  font-size: 25px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: center;
+}
+
+.profile {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  color: $principal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.profile div {
+  margin: 120px;
+  text-align: left;
+  font-size: 40px;
+}
+
+.profile-description {
+  font-size: 14px;
+}
+
+.profile-button {
+  margin-top: 0px;
+  padding: 0px 0px 0px 600px;
+
+}
+
+.profile-image {
+  display: flex;
+  width: 45%;
+  justify-content: inherit;
+  align-items: center;
+  padding: 0px 0px 0px 100px;
+}
+
+.profile-image img {
+  width: 100%;
+}
+
+.contact-button {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.profile-image {
+  display: flex;
+  width: 45%;
+  justify-content: flex-start;
+  align-items: right;
+  padding: 0px 0px 0px 20px;
+}
+
+.profile-image img {
+  width: 50%;
+}
+
+// diseño{
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     overflow: hidden;
+//   }
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  height: 500px;
+  justify-content: center;
+}
+
+.section {
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  color: $principal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.section div {
+  margin: 120px;
+  text-align: left;
+  font-size: 40px;
+}
+
+.section-description {
+  font-size: 14px;
+}
+
+.section-image {
+  display: flex;
+  width: 45%;
+  justify-content: inherit;
+  align-items: center;
+  padding: 0px 0px 0px 100px;
+}
+
+.section-image img {
+  width: 100%;
+}
+
+.section-image {
+  display: flex;
+  width: 45%;
+  justify-content: flex-start;
+  align-items: right;
+  padding: 0px 0px 0px 20px;
+}
+
+.section-image img {
+  width: 50%;
+}
