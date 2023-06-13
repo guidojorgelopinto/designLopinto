@@ -4,12 +4,25 @@
   height: 100vh;
 }
 
+.image-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-section img {
+  max-width: calc(70% - 40px);
+  max-height: calc(70% - 40px);
+}
+
 .text-section {
   flex: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 
 .text-section h1 {
@@ -20,30 +33,25 @@
   background-clip: text; /* Agrega esta línea */
 }
 
-
 .text-section h4 {
-  font-size: 12px;
+  font-size: 24px;
+  margin: 0;
 }
 
 .text-section p {
-  font-size: 16px;
+  font-size: 24px;
+  // margin: 0;
 }
 
-.image-section {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.image-section img {
-  max-width: 65%;
-  max-height: 65%;
-}
+//responsive
 
 @media screen and (min-width: 768px) {
   .container {
     flex-direction: row;
+  }
+
+  .image-section {
+    flex: 1;
   }
 
   .text-section {

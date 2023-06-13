@@ -1,76 +1,84 @@
 @import '_colors';
 
-body {
-  height: 100vh; /* Establece la altura del body al 100% del viewport */
-  margin: 0;
-  padding: 0;
-}
-
-p {
-
-  font-size: 25px;
-}
-
-.main-container {
+.container {
   display: flex;
-  flex-direction: row;
-  height: 500px;
-  justify-content: center;
-}
-
-.profile {
-  width: 100%;
-  max-width: 800px;
-  position: relative;
+  flex-direction: column;
+    height: 500px;
   color: $claro;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+.text-section h1 {
+  font-size: 10px;
+}
+
+.text-section h4 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.text-section p {
+  font-size: 16px;
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
   align-items: center;
-  overflow: hidden;
-
+  justify-content: center;
 }
 
-.profile div {
-  margin: 120px;
-  text-align: left;
-  font-size: 40px;
-}
-
-.profile-description {
-  font-size: 14px;
+.image-section img {
+  max-width: 50%;
+  max-height: 50%;
 }
 
 .profile-button {
-  margin-top: 0px;
-  padding: 0px 0px 0px 600px;
-
+  position: absolute;
+  bottom: 20px; /* Ajusta la distancia desde abajo según tus necesidades */
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.profile-image {
-  display: flex;
-  width: 45%;
-  justify-content: inherit;
-  align-items: center;
-  padding: 0px 0px 0px 100px;
-}
-
-.profile-image img {
-  width: 100%;
-}
-
-.contact-button {
-  font-size: 16px;
+button {
   padding: 10px 20px;
+  background-color: #4285f4; /* Color de fondo del botón */
+  color: #fff; /* Color del texto del botón */
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
 }
 
-.profile-image {
-  display: flex;
-  width: 45%;
-  justify-content: flex-start;
-  align-items: right;
-  padding: 0px 0px 0px 20px;
+button:hover {
+  background-color: #3b79db; /* Color de fondo del botón al pasar el cursor */
 }
 
-.profile-image img {
-  width: 50%;
+//responsive
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .text-section {
+    flex: 1;
+    padding: 40px;
+    text-align: left;
+  }
+
+  .text-section h1 {
+    font-size: 90px;
+  }
+
+  .text-section p {
+    font-size: 24px;
+  }
 }

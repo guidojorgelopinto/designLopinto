@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 120vh;
 }
 
 .image-section {
@@ -35,13 +35,15 @@
 
 .text-section h4 {
   font-size: 24px;
-  // margin: 0;
+  margin: 0;
 }
 
 .text-section p {
   font-size: 24px;
   // margin: 0;
 }
+
+//responsive
 
 @media screen and (min-width: 768px) {
   .container {
