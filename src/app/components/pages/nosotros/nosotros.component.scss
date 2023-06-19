@@ -1,9 +1,13 @@
+  body {
+    background-color: #f9f9f9;
+    min-height: 110vh;
+  }
+
   #nosotros {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f9f9f9;
-    padding: 100px 0;
+    padding: 110px 0;
     color: #333;
   }
 

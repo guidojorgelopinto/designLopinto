@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./contacto.component.scss']
 })
 export class ContactoComponent {
+  constructor() { }
 
+  onSubmit(form: any) {
+    // Lógica para procesar el envío del formulario
+    console.log(form);
+  }
 }

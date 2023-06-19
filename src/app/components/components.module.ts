@@ -6,7 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { MaterialModule } from './material.module';
 
 import { HomeComponent } from './pages/home/home.component';
-import { Home2Component } from './pages/Home2/home2.component';
+import { Home2Component } from './pages/home2/home2.component';
 import { Home3Component } from './pages/home3/home3.component';
 
 import { NosotrosComponent } from './pages/nosotros/nosotros.component';

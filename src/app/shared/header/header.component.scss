@@ -1,6 +1,6 @@
 @import '_colors';
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -11,65 +11,148 @@ header {
   margin: 0;
   justify-content: space-evenly;
   transition: 0.7s;
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0;
 }
 
-  header .logo{
-    position: relative;
-    color: $claro;
-    font-weight: bold;
+header .logo {
+  position: relative;
+  color: $claro;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: 2px;
+  transition: 1.5s;
+  text-decoration: none;
+}
+
+p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.links a {
+  font-size: 17px;
+  margin-left: 35px;
+  text-decoration: none;
+  display: inline-flex;
+  color: $claro;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 25px;
+}
+
+.links a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 16px;
+  }
+
+  .links a {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  /* transition: padding .3s ease,background-color .3s ease,color .3s ease,box-shadow .5s ease,height .3s ease; */
+  background-color: $claro;
+
+  .logo {
+    color: black;
+  }
+
+  .links a {
+    color: black;
+  }
+}
+
+/* Escritorios muy grandes */
+@media screen and (min-width: 1201px) {
+  /* Estilos para escritorios muy grandes */
+  header {
+    padding: 30px 0;
+  }
+
+  header .logo {
     font-size: 2em;
-    letter-spacing: 2px;
-    transition: 1.5s;
-    text-decoration: none;
   }
 
   p {
     font-size: 30px;
-    font-weight: bold;
-    margin: 0;
   }
 
   .links a {
-    font-size: 17px;
     margin-left: 35px;
-    text-decoration: none;
-    display: inline-flex;
-    color: $claro;
-    align-content: center;
-    justify-content: center;
     padding: 12px 25px;
   }
+}
 
-  .links a:hover {
-    color: black;
+/* Tablet en horizontal y escritorios normales */
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  /* Estilos para tablet en horizontal y escritorios normales */
+  header {
+    padding: 20px 0;
   }
 
-  @media (max-width: 600px) {
-    p {
-      font-size: 16px;
-    }
-
-    .links a {
-      font-size: 14px;
-      margin-right: 5px;
-    }
+  header .logo {
+    font-size: 1.8em;
   }
 
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    // transition: padding .3s ease,background-color .3s ease,color .3s ease,box-shadow .5s ease,height .3s ease;
-    background-color: $claro;
-
-    .logo {
-      color: black;
-    }
-
-    .links a {
-      color: black;
-    }
+  p {
+    font-size: 24px;
   }
 
+  .links a {
+    margin-left: 25px;
+    padding: 10px 20px;
+  }
+}
+
+/* Moviles en horizontal o tablet en vertical */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  /* Estilos para moviles en horizontal o tablet en vertical */
+  header {
+    padding: 15px 0;
+  }
+
+  header .logo {
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .links a {
+    margin-left: 20px;
+    padding: 8px 15px;
+  }
+}
+
+/* Moviles en vertical */
+@media screen and (max-width: 480px) {
+  /* Estilos para moviles en vertical */
+  header {
+    padding: 10px 0;
+  }
+
+  header .logo {
+    font-size: 1.4em;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .links a {
+    margin-left: 15px;
+    padding: 6px 12px;
+  }
+}

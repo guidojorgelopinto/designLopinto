@@ -7,8 +7,7 @@ import { Component, HostListener, ElementRef, Renderer2 } from '@angular/core';
 })
 export class HeaderComponent {
 
-
-// // Menu stick
+  // Menu stick
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) { }
 
