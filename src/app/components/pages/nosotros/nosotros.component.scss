@@ -1,42 +1,56 @@
-  body {
-    background-color: #f9f9f9;
-    min-height: 110vh;
-  }
+body {
+  min-height: 110vh;
+  position: relative; /* Añade posición relativa para contener el pseudo-elemento */
+}
 
-  #nosotros {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 110px 0;
-    color: #333;
-  }
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../../../../assets/nosotros\ fondo.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px); /* Aplica un desenfoque de 5 píxeles */
+  z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+}
 
-  .contenido {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+#nosotros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 110px 0;
+  color: #333;
+}
 
-  .contenido h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
+.contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
 
-  .contenido p {
-    font-size: 18px;
-    line-height: 1.6;
-  }
+.contenido h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
 
-  .imagen {
-    flex: 1;
-    text-align: center;
-  }
+.contenido p {
+  font-size: 18px;
+  line-height: 1.6;
+}
 
-  .imagen img {
-    max-width: 25%;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
+// .imagen {
+//   flex: 1;
+//   text-align: center;
+// }
+
+// .imagen img {
+//   max-width: 25%;
+//   border-radius: 50%;
+//   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+// }

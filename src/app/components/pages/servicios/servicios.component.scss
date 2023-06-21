@@ -5,13 +5,13 @@
     min-height: 150vh;
   }
 
-.container {
-  text-align: center;
-  padding: 100px;
-  h2 {
-    margin-bottom: 2rem;
+  .container {
+    text-align: center;
+    padding: 6.25em;
+    h2 {
+      margin-bottom: 2rem;
+    }
   }
-}
 
 .card-container {
   display: flex;

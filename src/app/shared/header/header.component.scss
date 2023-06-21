@@ -14,14 +14,21 @@ header {
   padding: 30px 0;
 }
 
-header .logo {
-  position: relative;
-  color: $claro;
+.logo {
+  text-align: center;
+}
+
+.line1 {
+  font-family: 'Comfortaa', cursive;
+  font-size: 30px;
+  color: white;
   font-weight: bold;
-  font-size: 2em;
-  letter-spacing: 2px;
-  transition: 1.5s;
-  text-decoration: none;
+}
+
+.line2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: white;
 }
 
 p {
@@ -61,7 +68,6 @@ p {
   top: 0;
   width: 100%;
   z-index: 100;
-  /* transition: padding .3s ease,background-color .3s ease,color .3s ease,box-shadow .5s ease,height .3s ease; */
   background-color: $claro;
 
   .logo {
@@ -73,86 +79,23 @@ p {
   }
 }
 
-/* Escritorios muy grandes */
+/* Estilos adicionales para diferentes tamaños de pantalla */
 @media screen and (min-width: 1201px) {
   /* Estilos para escritorios muy grandes */
-  header {
-    padding: 30px 0;
-  }
-
-  header .logo {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 30px;
-  }
-
-  .links a {
-    margin-left: 35px;
-    padding: 12px 25px;
-  }
+  // ...
 }
 
-/* Tablet en horizontal y escritorios normales */
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   /* Estilos para tablet en horizontal y escritorios normales */
-  header {
-    padding: 20px 0;
-  }
-
-  header .logo {
-    font-size: 1.8em;
-  }
-
-  p {
-    font-size: 24px;
-  }
-
-  .links a {
-    margin-left: 25px;
-    padding: 10px 20px;
-  }
+  // ...
 }
 
-/* Moviles en horizontal o tablet en vertical */
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Estilos para moviles en horizontal o tablet en vertical */
-  header {
-    padding: 15px 0;
-  }
-
-  header .logo {
-    font-size: 1.6em;
-  }
-
-  p {
-    font-size: 20px;
-  }
-
-  .links a {
-    margin-left: 20px;
-    padding: 8px 15px;
-  }
+  // ...
 }
 
-/* Moviles en vertical */
 @media screen and (max-width: 480px) {
   /* Estilos para moviles en vertical */
-  header {
-    padding: 10px 0;
-  }
-
-  header .logo {
-    font-size: 1.4em;
-  }
-
-  p {
-    font-size: 18px;
-  }
-
-  .links a {
-    margin-left: 15px;
-    padding: 6px 12px;
-  }
+  // ...
 }

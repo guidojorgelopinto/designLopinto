@@ -3,9 +3,3 @@
 *{
   box-sizing: border-box;
 }
-
-:host {
-  display: block;
-  height: 100vh; /* Establece la altura del componente al 100% del alto de la ventana */
-  background: $home
-}

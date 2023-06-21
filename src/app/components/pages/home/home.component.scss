@@ -1,5 +1,12 @@
 @import '_colors';
 
+:host {
+  display: block;
+  height: 100vh; /* Establece la altura del componente al 100% del alto de la ventana */
+  background: $home
+}
+
+
 body {
   color: $claro;
   min-height: 100vh;
@@ -29,9 +36,12 @@ body {
   font-size: 80px;
 }
 
-.text-section h4 {
-  font-size: 24px;
-  margin: 0;
+.text-section h3{
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 20px;
+  font-weight: 400;
+  text-align: left;
 }
 
 .image-section {
@@ -91,7 +101,7 @@ button:hover {
   }
 
   .text-section h1 {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .text-section h4 {
