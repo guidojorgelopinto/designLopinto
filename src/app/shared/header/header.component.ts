@@ -1,14 +1,45 @@
-import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+// import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+// @Component({
+//   selector: 'app-header',
+//   templateUrl: 'header.component.html',
+//   styleUrls: ['header.component.scss']
+// })
+// export class HeaderComponent {
+//   isSticky: boolean = false;
 
+//   constructor(private elementRef: ElementRef, private renderer: Renderer2) { }
+
+//   @HostListener('window:scroll')
+//   onWindowScroll() {
+//     const header = this.elementRef.nativeElement.querySelector('header');
+//     const scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+//     const scrollThreshold = 100; // Punto de desplazamiento en píxeles para activar el "sticky"
+//     this.isSticky = scrollTop > scrollThreshold;
+
+//     if (this.isSticky) {
+//       this.renderer.addClass(header, 'sticky');
+//     } else {
+//       this.renderer.removeClass(header, 'sticky');
+//     }
+//   }
+// }
+
+import { Component, ElementRef, HostListener, Renderer2, OnInit } from '@angular/core';
+import { HeaderService } from '../Service/header.service';
 @Component({
   selector: 'app-header',
   templateUrl: 'header.component.html',
   styleUrls: ['header.component.scss']
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   isSticky: boolean = false;
+  colorLetra: string = '';
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2) { }
+  constructor(private headerService: HeaderService, private elementRef: ElementRef, private renderer: Renderer2) { }
+
+  ngOnInit(): void {
+    this.colorLetra = this.headerService.getColorLetra();
+  }
 
   @HostListener('window:scroll')
   onWindowScroll() {
@@ -24,4 +55,3 @@ export class HeaderComponent {
     }
   }
 }
-

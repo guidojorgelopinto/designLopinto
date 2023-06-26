@@ -1,57 +1,67 @@
-import { Component } from '@angular/core';
-
+import {  Component, OnInit } from '@angular/core';
+import { HeaderService } from '../../../shared/Service/header.service';
 @Component({
   selector: 'app-proyectos',
   templateUrl: './proyectos.component.html',
-  styleUrls: ['./proyectos.component.scss']
+  styleUrls: ['./proyectos.component.scss'],
 })
-export class ProyectosComponent {  cards = [
-  {
-    title: 'Card 1',
-    text1: 'Lorem ipsum dolor sit amet',
-    text2: 'consectetur adipiscing elit',
-    image1: 'random-image1.jpg',
-    link: 'link1',
-    backgroundColor: 'linear-gradient(to right top, #ff6b6b, #eeadad, #9cc3e6, #5282c3)'
-  },
-  {
-    title: 'Card 2',
-    text1: 'Lorem ipsum dolor sit amet',
-    text2: 'consectetur adipiscing elit',
-    image1: 'random-image2.jpg',
-    link: 'link2',
-    backgroundColor: 'linear-gradient(to right top, #ffd166, #f9c74f, #97bf0d, #5a940d)'
-  },
-  {
-    title: 'Card 3',
-    text1: 'Lorem ipsum dolor sit amet',
-    text2: 'consectetur adipiscing elit',
-    image1: 'random-image3.jpg',
-    link: 'link3',
-    backgroundColor: 'linear-gradient(to right top, #06d6a0, #57c3ad, #036d8d, #03396c)'
-  },
-  {
-    title: 'Card 4',
-    text1: 'Lorem ipsum dolor sit amet',
-    text2: 'consectetur adipiscing elit',
-    image1: 'random-image4.jpg',
-    link: 'link4',
-    backgroundColor: 'linear-gradient(to right top, #ffd700, #f9c710, #97bf0d, #5a940d)'
+export class ProyectosComponent implements OnInit {
+
+  constructor(private headerService: HeaderService) { }
+
+  // Establece el color de la letra del header en este componente.
+  ngOnInit(): void {
+    this.headerService.setColorLetra('black');
+    }
+
+    // Texto de las cards
+    cards = [
+      {
+        title: 'Diseño Web Personalizado',
+        text1: 'Marca la diferencia',
+        text2: 'Ofrece la mejor experiencia tus clientes',
+        image1: 'random-image1.jpg',
+        link: '/',
+        backgroundColor: 'linear-gradient(55deg, rgb(36, 59, 182), rgb(49, 189, 220)'
+      },
+      {
+        title: 'Diseño Web Rapido',
+        text1: 'Crea un sitio web con un presupuesto',
+        text2: 'muy bajo en poco tiempo',
+        image1: 'random-image2.jpg',
+        link: 'link2',
+        backgroundColor: 'linear-gradient(55deg, #A413B5, #FC646B)'
+      },
+      {
+        title: 'Mantenimiento Web',
+        text1: 'Nos encargamos de tu web.',
+        text2: 'Nos aseguramos de que funcione 24/7',
+        image1: 'random-image3.jpg',
+        link: 'link3',
+        backgroundColor: 'linear-gradient(55deg, #57F77E, #33B6D8)'
+      },
+      {
+        title: 'Optimizacion Web',
+        text1: 'Mejoramos y/o actualizamos el codigo de tu web',
+        text2: '',
+        image1: 'random-image4.jpg',
+        link: 'link4',
+        backgroundColor: 'linear-gradient(55deg, #FAB056, #DE3933)'
+      }
+    ];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   }
-];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}

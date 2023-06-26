@@ -21,14 +21,14 @@ header {
 .line1 {
   font-family: 'Comfortaa', cursive;
   font-size: 30px;
-  color: white;
+  color: $homefont2;
   font-weight: bold;
 }
 
 .line2 {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
-  color: white;
+  color: $homefont2;
 }
 
 p {
@@ -42,7 +42,7 @@ p {
   margin-left: 35px;
   text-decoration: none;
   display: inline-flex;
-  color: $claro;
+  color: $homefont2;
   align-items: center;
   justify-content: center;
   padding: 12px 25px;
@@ -65,10 +65,19 @@ p {
 
 .sticky {
   position: fixed;
+  // color: $oscuro;
   top: 0;
   width: 100%;
   z-index: 100;
   background-color: $claro;
+
+  .line1 {
+    color: black;
+  }
+
+  .line2 {
+    color: black;
+  }
 
   .logo {
     color: black;
@@ -82,20 +91,85 @@ p {
 /* Estilos adicionales para diferentes tamaños de pantalla */
 @media screen and (min-width: 1201px) {
   /* Estilos para escritorios muy grandes */
-  // ...
+  header {
+    padding: 40px 0;
+  }
+
+  .line1 {
+    font-size: 40px;
+  }
+
+  .line2 {
+    font-size: 18px;
+  }
+
+  .links a {
+    font-size: 20px;
+    margin-left: 45px;
+    padding: 15px 30px;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   /* Estilos para tablet en horizontal y escritorios normales */
-  // ...
+  header {
+    padding: 20px 0;
+  }
+
+  .line1 {
+    font-size: 28px;
+  }
+
+  .line2 {
+    font-size: 14px;
+  }
+
+  .links a {
+    font-size: 16px;
+    margin-left: 25px;
+    padding: 10px 20px;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   /* Estilos para moviles en horizontal o tablet en vertical */
-  // ...
+  header {
+    padding: 15px 0;
+  }
+
+  .line1 {
+    font-size: 24px;
+  }
+
+  .line2 {
+    font-size: 12px;
+  }
+
+  .links a {
+    font-size: 14px;
+    margin-left: 15px;
+    padding: 8px 15px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   /* Estilos para moviles en vertical */
-  // ...
+  header {
+    padding: 10px 0;
+  }
+
+  .line1 {
+    font-size: 20px;
+  }
+
+  .line2 {
+    font-size: 10px;
+  }
+
+  .links a {
+    font-size: 12px;
+    margin-left: 10px;
+    padding: 6px 12px;
+  }
 }
+
