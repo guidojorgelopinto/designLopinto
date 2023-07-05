@@ -1,0 +1,19 @@
+/* accept-cookies.component.css */
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+}
+
+.cookie-banner p {
+  margin: 0;
+}
+
+.cookie-banner a {
+  color: #333;
+  text-decoration: underline;
+}

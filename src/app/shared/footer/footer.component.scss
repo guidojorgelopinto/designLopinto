@@ -1,134 +1,167 @@
-  .footer {
-    background-color: #f2f2f2;
-    padding: 20px;
-    text-align: center;
+@import '_colors';
+
+* {
+  text-decoration: none;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content:  space-between;
+    align-items: center;
+  text-decoration: none;
+
+    p {
+      margin: 5px 0;
+  text-decoration: none;
+    }
+
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+
+      li {
+        display: inline;
+
+        a {
+          text-decoration: none;
+          color: #333;
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+
+  /* Consultas de medios para adaptar el footer a diferentes tamaños de pantalla */
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px;
 
     .footer-content {
-      display: flex;
+      flex-direction: row;
+
+      p {
+        margin: 0;
+        margin-right: 20px;
+      }
+
+      .footer-links {
+        margin-top: 0;
+
+        li {
+          display: inline;
+
+          a {
+            margin: 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding: 25px;
+
+    .footer-content {
+      flex-direction: row;
+
+      p {
+        margin: 0;
+        margin-right: 15px;
+      }
+
+      .footer-links {
+        margin-top: 0;
+
+        li {
+          display: inline;
+
+          a {
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    padding: 20px;
+
+    .footer-content {
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
 
       p {
         margin: 5px 0;
       }
 
       .footer-links {
-        list-style: none;
-        padding: 0;
         margin-top: 10px;
 
         li {
           display: inline;
 
           a {
-            text-decoration: none;
-            color: #333;
             margin: 0 10px;
           }
         }
       }
     }
+  }
 
-    /* Escritorios muy grandes */
-    @media screen and (min-width: 1201px) {
-      padding: 30px;
+  @media screen and (max-width: 767px) {
+    padding: 15px;
 
-      .footer-content {
-        flex-direction: row;
+    .footer-content {
+      flex-direction: column;
 
-        p {
-          margin: 0;
-          margin-right: 20px;
-        }
-
-        .footer-links {
-          margin-top: 0;
-
-          li {
-            display: inline;
-
-            a {
-              margin: 0 10px;
-            }
-          }
-        }
+      p {
+        margin: 5px 0;
       }
-    }
 
-    /* Tablet en horizontal y escritorios normales */
-    @media screen and (min-width: 769px) and (max-width: 1200px) {
-      padding: 25px;
+      .footer-links {
+        margin-top: 10px;
 
-      .footer-content {
-        flex-direction: row;
+        li {
+          display: block;
 
-        p {
-          margin: 0;
-          margin-right: 15px;
-        }
-
-        .footer-links {
-          margin-top: 0;
-
-          li {
-            display: inline;
-
-            a {
-              margin: 0 8px;
-            }
-          }
-        }
-      }
-    }
-
-    /* Moviles en horizontal o tablet en vertical */
-    @media screen and (min-width: 481px) and (max-width: 768px) {
-      padding: 20px;
-
-      .footer-content {
-        flex-direction: column;
-
-        p {
-          margin: 5px 0;
-        }
-
-        .footer-links {
-          margin-top: 10px;
-
-          li {
-            display: inline;
-
-            a {
-              margin: 0 10px;
-            }
-          }
-        }
-      }
-    }
-
-    /* Moviles en vertical */
-    @media screen and (max-width: 480px) {
-      padding: 15px;
-
-      .footer-content {
-        flex-direction: column;
-
-        p {
-          margin: 5px 0;
-        }
-
-        .footer-links {
-          margin-top: 10px;
-
-          li {
-            display: block;
-
-            a {
-              margin: 5px 0;
-            }
+          a {
+            margin: 5px 0;
           }
         }
       }
     }
   }
+
+  @media screen and (max-width: 480px) {
+    padding: 10px;
+
+    .footer-content {
+      flex-direction: column;
+
+      p {
+        margin: 5px 0;
+        font-size: 0.9rem;
+      }
+
+      .footer-links {
+        margin-top: 10px;
+
+        li {
+          display: block;
+
+          a {
+            margin: 5px 0;
+            font-size: 0.9rem;
+          }
+        }
+      }
+    }
+  }
+}
+

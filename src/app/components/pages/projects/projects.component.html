@@ -1,0 +1,20 @@
+<app-header></app-header>
+
+<body>
+  <div class="container">
+    <h2>Proyectos</h2>
+  <div class="card-container">
+    <a *ngFor="let card of cards" [href]="card.link">
+      <div class="card">
+        <div class="card-image" [style.background-image]="'url(' + card.image + ')'"></div>
+        <div class="card-content">
+          <h2>{{ card.title }}</h2>
+          <p>{{ card.description }}</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+</body>
+
+<app-footer></app-footer>

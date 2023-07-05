@@ -1,0 +1,55 @@
+@import '_colors';
+
+body {
+  background-color: $claro;
+  min-height: 120vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  padding: 80px 0;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Consultas de medios para adaptar el diseño a diferentes tamaños de pantalla */
+
+/* Desde 1201px en adelante */
+@media screen and (min-width: 1201px) {
+  .container {
+    padding: 80px;
+  }
+}
+
+/* Entre 992px y 1200px */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .container {
+      padding: 60px;
+    }
+  }
+
+  /* Entre 768px y 991px */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      padding: 40px;
+    }
+  }
+
+  /* Hasta 767px */
+  @media screen and (max-width: 767px) {
+    .container {
+      padding: 20px;
+    }
+  }
+

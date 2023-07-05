@@ -8,11 +8,15 @@ import { MaterialModule } from './material.module';
 import { HomeComponent } from './pages/home/home.component';
 import { Home2Component } from './pages/home2/home2.component';
 import { Home3Component } from './pages/home3/home3.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { ProjectsComponent } from './pages/projects/projects.component';
+import { ContactComponent } from './pages/contact/contact.component';
+import { CreationdesignsComponent } from './pages/creationdesigns/creationdesigns.component';
+import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
+import { OptimizationComponent } from './pages/optimization/optimization.component';
+import { PerformanceComponent } from "./pages/performance/performance.component";
 
-import { NosotrosComponent } from './pages/nosotros/nosotros.component';
-import { ServiciosComponent } from './pages/servicios/servicios.component';
-import { ProyectosComponent } from './pages/proyectos/proyectos.component';
-import { ContactoComponent } from './pages/contacto/contacto.component';
 
 
 @NgModule({
@@ -20,10 +24,15 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     HomeComponent,
     Home2Component,
     Home3Component,
-    NosotrosComponent,
-    ServiciosComponent,
-    ProyectosComponent,
-    ContactoComponent,
+    AboutComponent,
+    ServicesComponent,
+    ProjectsComponent,
+    CreationdesignsComponent,
+    ContactComponent,
+    MaintenanceComponent,
+    OptimizationComponent,
+    PerformanceComponent,
+
   ],
 
   imports: [
@@ -34,10 +43,14 @@ import { ContactoComponent } from './pages/contacto/contacto.component';
     HomeComponent,
     Home2Component,
     Home3Component,
-    NosotrosComponent,
-    ServiciosComponent,
-    ProyectosComponent,
-    ContactoComponent,
+    AboutComponent,
+    ServicesComponent,
+    ProjectsComponent,
+    CreationdesignsComponent,
+    ContactComponent,
+    MaintenanceComponent,
+    OptimizationComponent,
+    PerformanceComponent,
 ],
 })
 export class ComponentsModule {}
