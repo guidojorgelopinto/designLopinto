@@ -1,4 +1,4 @@
-@import '_colors';
+@import '../../../colors';
 
 body {
   color: $oscuro;
@@ -165,7 +165,7 @@ body {
 @media screen and (max-width: 480px) {
   body {
     color: $oscuro;
-    min-height: 100vh;
+    min-height: 50vh;
   }
 
   .container {

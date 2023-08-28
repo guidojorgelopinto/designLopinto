@@ -53,19 +53,4 @@ export class ServicesComponent implements OnInit {
       backgroundColor: '#EE7F48'
     },
     ];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   }

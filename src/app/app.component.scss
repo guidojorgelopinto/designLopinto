@@ -1,7 +1,7 @@
-@import '_colors';
+@import '../app/colors';
 
 :host {
   box-sizing: border-box;
   display: block;
-  background: $claro;
+  background: #f2f2f2;
 }

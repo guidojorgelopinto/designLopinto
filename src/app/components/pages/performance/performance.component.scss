@@ -1,77 +1,12 @@
-// @import '_colors';
+@import '../../../colors';
 
-// body {
-//   background-color: $claro;
-//   min-height: 100vh;
-// }
-
-// .container {
-//   max-width: 800px;
-//   margin: 0 auto;
-//   padding: 40px;
-//   text-align: center;
-//   padding: 80px 0;
-// }
-
-// h1 {
-//   font-size: 80px;
-//   margin-bottom: 10px;
-//   background: linear-gradient( 135deg, #736EFE 10%, #5EFCE8 100%);
-//   // background: linear-gradient( 135deg, #FDEB71 10%, #F8D800 100%);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   background-clip: text; /* Agrega esta línea */
-// }
-
-// p {
-//   font-size: 18px;
-//   margin-bottom: 30px;
-// }
-
-// /* Consultas de medios para adaptar el diseño a diferentes tamaños de pantalla */
-
-// /* Desde 1201px en adelante */
-// @media screen and (min-width: 1201px) {
-//   .container {
-//     padding: 80px;
-//   }
-// }
-
-// /* Entre 992px y 1200px */
-// @media screen and (min-width: 992px) and (max-width: 1200px) {
-//     .container {
-//       padding: 60px;
-//     }
-//   }
-
-//   /* Entre 768px y 991px */
-//   @media screen and (min-width: 768px) and (max-width: 991px) {
-//     .container {
-//       padding: 40px;
-//     }
-//   }
-
-//   /* Hasta 767px */
-//   @media screen and (max-width: 767px) {
-//     .container {
-//       padding: 20px;
-//     }
-//   }
-
-@import '_colors';
-
-// body {
-//   background-color: $claro;
-//   min-height: 100vh;
-// }
-
+/* Estilos base para todas las medidas de pantalla */
 .container {
   background-color: $claro;
   max-width: 800px;
   margin: 0 auto;
   padding: 40px;
   text-align: center;
-  padding: 80px 0;
 }
 
 h1 {
@@ -88,31 +23,33 @@ p {
   margin-bottom: 30px;
 }
 
-/* Desde 1201px en adelante */
-@media screen and (min-width: 1201px) {
+/* Media query para pantallas con un ancho máximo de 1201px */
+@media screen and (max-width: 1201px) {
   .container {
-    padding: 80px;
+    max-width: 90%; /* Ajusta el ancho máximo para pantallas de tamaño medio */
+    padding: 30px; /* Ajusta el padding para pantallas de tamaño medio */
+  }
+
+  h1 {
+    font-size: 60px; /* Ajusta el tamaño de fuente para pantallas de tamaño medio */
+  }
+
+  p {
+    font-size: 16px; /* Ajusta el tamaño de fuente para pantallas de tamaño medio */
   }
 }
 
-/* Entre 769px y 1200px */
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .container {
-    padding: 60px;
-  }
-}
-
-/* Entre 481px y 768px */
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .container {
-    padding: 40px;
-  }
-}
-
-/* Hasta 480px */
+/* Media query para pantallas con un ancho máximo de 480px */
 @media screen and (max-width: 480px) {
   .container {
-    padding: 20px;
+    padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
+  }
+
+  h1 {
+    font-size: 40px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+  }
+
+  p {
+    font-size: 14px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
   }
 }
-

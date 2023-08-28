@@ -15,7 +15,12 @@ describe('ServicesComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  // it('should create', () => {
+  //   expect(component).toBeTruthy();
+  // });
+
+  it('should have a titleOne', () => {
+    expect(component.titleOne).toBe('Servicios');
   });
+
 });

@@ -16,6 +16,8 @@ import { CreationdesignsComponent } from './pages/creationdesigns/creationdesign
 import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 import { OptimizationComponent } from './pages/optimization/optimization.component';
 import { PerformanceComponent } from "./pages/performance/performance.component";
+import { About1Component } from "./pages/about1/about1.component";
+
 
 
 
@@ -32,6 +34,7 @@ import { PerformanceComponent } from "./pages/performance/performance.component"
     MaintenanceComponent,
     OptimizationComponent,
     PerformanceComponent,
+    About1Component
 
   ],
 
@@ -51,6 +54,7 @@ import { PerformanceComponent } from "./pages/performance/performance.component"
     MaintenanceComponent,
     OptimizationComponent,
     PerformanceComponent,
+    About1Component
 ],
 })
-export class ComponentsModule {}
+export class ComponentsModule { }

@@ -1,18 +1,18 @@
-  <header class="scrolling" [ngClass]="{ 'sticky': isSticky }">
-    <div class="logo">
-      <div [style.color]="colorLetra" class="line2">-design-</div>
-      <div [style.color]="colorLetra" routerLink='/home' class="line1">LO PINTO</div>
-    </div>
-    <button class="hamburger" (click)="toggleMenu()">
-      <span class="line"></span>
-      <span class="line"></span>
-      <span class="line"></span>
-    </button>
-    <nav [ngClass]="{ 'open': isMenuOpen }" class="links">
-      <a [style.color]="colorLetra" routerLink="/about" routerLinkActive="About">Nosotros</a>
-      <a [style.color]="colorLetra" routerLink="/services" routerLinkActive="Services">Servicios</a>
-      <a [style.color]="colorLetra" routerLink="/projects" routerLinkActive="Projects">Projectos</a>
-      <a [style.color]="colorLetra" style="border-radius: 21px; border: 1px solid; border-color: '$fonthome2'" routerLink="/contact" routerLinkActive="Contact">Contacto</a>
-    </nav>
-  </header>
-  <router-outlet></router-outlet>
+<header class="scrolling" [ngClass]="{ 'sticky': isSticky }">
+  <div class="logo">
+    <div [style.color]="colorLetra" class="line2">-design-</div>
+    <div [style.color]="colorLetra" routerLink='/home' class="line1">LO PINTO</div>
+  </div>
+  <button class="hamburger" (click)="toggleMenu()">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </button>
+  <nav [ngClass]="{ 'open': isMenuOpen }" class="links">
+    <a [style.color]="colorLetra" routerLink="/about" routerLinkActive="About">Nosotros</a>
+    <a [style.color]="colorLetra" routerLink="/services" routerLinkActive="Services">Servicios</a>
+    <a [style.color]="colorLetra" routerLink="/projects" routerLinkActive="Projects">Projectos</a>
+    <a [style.color]="colorLetra" style="border-radius: 21px; border: 1px solid; border-color: '$fonthome2'" routerLink="/contact" routerLinkActive="Contact">Contacto</a>
+  </nav>
+</header>
+<router-outlet></router-outlet>

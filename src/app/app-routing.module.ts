@@ -9,9 +9,8 @@ import { ContactComponent } from "./components/pages/contact/contact.component";
 import { CreationdesignsComponent } from "./components/pages/creationdesigns/creationdesigns.component";
 import { MaintenanceComponent } from "./components/pages/maintenance/maintenance.component";
 import { OptimizationComponent } from "./components/pages/optimization/optimization.component";
-import { PrivacyPolicyComponent } from './shared/legal/privacy-policy/privacy-policy.component';
-import { CookiePolicyComponent } from './shared/legal/cookie-policy/cookie-policy.component';
-import { AcceptCookiesComponent } from './shared/legal/accept-cookies/accept-cookies.component';
+import { PrivacyPolicyComponent } from './shared/privacy-policy/privacy-policy.component';
+import { CookiePolicyComponent } from './shared/cookie-policy/cookie-policy.component';
 import { PerformanceComponent } from './components/pages/performance/performance.component';
 
 const routes: Routes = [
@@ -26,7 +25,6 @@ const routes: Routes = [
     { path: "optimization", component: OptimizationComponent },
     { path: "privacy-policy", component: PrivacyPolicyComponent },
     { path: "cookie-policy", component: CookiePolicyComponent },
-    { path: "accept-cookies", component: AcceptCookiesComponent },
     { path: "performance", component: PerformanceComponent},
 
 ];

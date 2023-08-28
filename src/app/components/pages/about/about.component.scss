@@ -1,47 +1,66 @@
-@import '_colors';
+/* about.component.scss */
 
-:host {
-  display: block;
-  height: 120vh; /* Establece la altura del componente al 100% del alto de la ventana */
-  // background-image: url('../../../../assets/nosotros\ fondo.jpg');
-  background-size: cover;
-  background-position: center;
+.about-container {
+  position: relative;
+  width: 100%;
+  height: 80vh;
 }
 
-
-body {
-  color: $claro;
-  // min-height: 100vh;
-
-  // filter: blur(1px); /* Aplica un desenfoque de 5 píxeles */
-  // z-index: -1; /* Coloca el pseudo-elemento detrás del contenido */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../../../assets/nosotros fondo - 1.jpg') no-repeat center center / cover;
+  filter: blur(5px); /* Aplica el efecto de difuminado solo a la imagen de fondo */
 }
 
-#about {
+.black-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color: rgb(24, 24, 24);
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 110px 0;
-  color: #333;
+  align-items: center;
 }
 
-.contenido {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+.white-text {
+  color: white;
   text-align: center;
+  font-size: 24px;
 }
 
-.contenido h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
+.wave {
+  margin-top: -100px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
 }
 
-.contenido p {
-  font-size: 18px;
-  line-height: 1.6;
+.text-1 {
+  background-color: rgb(24, 24, 24);
+  padding: 20px 0px 20px 0px;
 }
 
+/* Media Queries para diferentes tamaños de pantalla */
 
+@media screen and (max-width: 480px) {
+  .about-container {
+    height: 40vh; /* Ajusta la altura para pantallas de 480px o menos */
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1200px) {
+  .about-container {
+    height: 60vh; /* Ajusta la altura para pantallas entre 481px y 1200px */
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  .about-container {
+    height: 80vh; /* Ajusta la altura para pantallas de 1201px o más */
+  }
+}

@@ -5,24 +5,38 @@
     <h1>Contact</h1>
     <p>¡Contáctanos para obtener más información!</p>
 
-    <div class="contact-form">
-      <mat-form-field appearance="fill">
-        <mat-label>Nombre</mat-label>
-        <input matInput placeholder="Nombre completo">
-      </mat-form-field>
+    <form [formGroup]="contactform" class="form-group">
+        <div class="contact-form">
+            <mat-form-field appearance="fill">
+              <mat-label>Nombre</mat-label>
+              <input matInput formControlName="name" placeholder="Nombre completo">
+            </mat-form-field>
 
-      <mat-form-field appearance="fill">
-        <mat-label>Email</mat-label>
-        <input matInput type="email" placeholder="Correo electrónico">
-      </mat-form-field>
+            <small *ngIf="contactform.get('name')?.invalid && contactform.get('name')?.touched">Name is required</small>
 
-      <mat-form-field appearance="fill">
-        <mat-label>Mensaje</mat-label>
-        <textarea matInput placeholder="Escribe tu mensaje"></textarea>
-      </mat-form-field>
+            <mat-form-field appearance="fill">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email" type="email" placeholder="Correo electrónico">
+            </mat-form-field>
 
-      <button mat-raised-button color="primary">Enviar</button>
-    </div>
+            <small *ngIf="contactform.get('email')?.invalid && contactform.get('email')?.touched">Email is required</small>
+
+
+            <mat-form-field appearance="fill">
+              <mat-label>Mensaje</mat-label>
+              <textarea matInput formControlName="message" placeholder="Escribe tu mensaje"></textarea>
+            </mat-form-field>
+
+            <small *ngIf="contactform.get('message')?.invalid && contactform.get('message')?.touched">Message is required</small>
+
+
+<button type="reset" mat-raised-button color="primary" [disabled]="contactform.invalid" (click)="submitData()">Enviar</button>
+
+
+            <p *ngIf="isSubmit" class="submitMessage">{{ submitMessage }}</p>
+
+        </div>
+  </form>
   </div>
 </body>
 

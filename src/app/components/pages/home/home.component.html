@@ -1,10 +1,8 @@
-<app-accept-cookies *ngIf="showAcceptCookiesBanner"></app-accept-cookies>
-<a href="https://wa.me/34682272683?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 <app-header></app-header>
 <body>
 <div class="container">
   <div class="text-section">
-    <h1>Creamos Apps & Sitios Webs</h1>
+    <h1>Creamos <br> Sitios Webs</h1>
     <h3>Tenemos ganas, hacemos lo que nos apasiona.</h3>
   </div>
   <div class="image-section">
@@ -13,6 +11,14 @@
   <div class="profile-button">
     <button (click)="scrollToSection()">Ir más abajo</button>
   </div>
+</div>
+<a href="https://wa.me/34682272683?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+<div class="cookie-banner" *ngIf="!accepted">
+  <p>
+    Utilizamos cookies para mejorar tu experiencia en nuestro sitio. Al continuar, aceptas el uso de cookies.
+    <button (click)="acceptCookies()">Aceptar</button>
+  </p>
 </div>
 </body>
 <app-home2></app-home2>

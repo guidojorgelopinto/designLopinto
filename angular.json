@@ -35,7 +35,7 @@
             "scripts": [],
             "stylePreprocessorOptions": {
               "includePaths": [
-                "src/app/shared/"
+                "src/app/"
             ]
             }
           },

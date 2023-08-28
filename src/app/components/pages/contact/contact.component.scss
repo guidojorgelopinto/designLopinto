@@ -1,4 +1,4 @@
-@import '_colors';
+@import '../../../colors';
 
 body {
   background-color: $claro;
@@ -41,6 +41,16 @@ p {
   button {
     align-self: flex-end;
   }
+}
+
+.submitMessage {
+  color: green;
+  font-weight: bold;
+}
+
+.small {
+  margin-bottom: 15px;
+  margin-top: -10px;
 }
 
 /* Consultas de medios para adaptar el diseño a diferentes tamaños de pantalla */

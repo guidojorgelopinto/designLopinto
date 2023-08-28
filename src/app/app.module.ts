@@ -8,6 +8,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentsModule } from "./components/components.module";
 import { SharedModule } from './shared/shared.module';
 import { MaterialModule } from "./components/material.module";
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +25,8 @@ import { MaterialModule } from "./components/material.module";
     ComponentsModule,
     SharedModule,
     MaterialModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
   ],
   providers: [],
   bootstrap: [AppComponent]
